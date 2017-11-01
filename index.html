@@ -4,29 +4,28 @@
 		<title>Jjustgreg</title>
 		<link rel="stylesheet" type="text/css" href="fonts/style.css"/>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<style type="text/css"></style>
 	</head>
-	<body>
-
 		<!-- Headings -->
 		<h1><marquee direction="right">Hi! non professional webpage maker here!</marquee>
 		<h2>This webpage is just a test</h2>
 		<h2>If you are JjustGreg, hello</h2>
-		<h2>Im alex</h2>
 		<h2>This webpage is WIP</h2>
 		<h6>WIP means work in progress btw</h6>
-
+			<div class="popup" onclick="myFunction()">Credit (click)
+  			<span class="popuptext" id="myPopup">Alex: Creator,<br> Halee: Background artist, <br> Adrian: Co-coder</span>
+ 			 <script>
+				// When the user clicks on <div>, open the popup
+				function myFunction() {
+    			var popup = document.getElementById("myPopup");
+    			popup.classList.toggle("show");}
+			</script>
+		</div>
 		<!-- Paragraph -->
 		<p>
 			#1 youtuber,<strong> Jjustgreg</strong>,
-			If you are JjustGreg fan, welcome! there is nothing here as of now
-			<script type='text/javascript' src='http://m.free-codes.org/gh.php?id=2001'></script><!-- By: Joshua Oliver -->
-<style>
-        @keyframes spin {from {} to {transform:rotate(360deg);}}
-        .spin:hover {animation-name:spin;animation-duration:3s;position:absolute;}
-    </style>
-    <br><br><span class="spin">Put your cursor here!</span><a target="_blank" href="http://free-web-tools.com/image-fall-like-snow/" style="text-decoration:none;bottom:0;left:10px;font-size:5pt;color:gray;position:absolute"</a><a target="_blank" style="font-size: 8pt; text-decoration: none"></a>
-		</p>
-		
+			If you are JjustGreg fan, welcome! there is nothing here as of now </p>
+
 		<!-- Lists -->
 		<ul>
 			<li>Greg is the most positive youtuber i ever saw</li>
@@ -43,7 +42,7 @@
 		</ul>
 										
 		<p>Gregs latest video:</p>
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/nXLtPjsqcFg" frameborder="0" allowfullscreen></iframe></iframe>
+		<iframe width="560" height="315" src="http://www.youtube.com/embed?max-results=1&controls=0&showinfo=0&rel=0&listType=user_uploads&list=jjustGreg" frameborder="0" allowfullscreen></iframe>
 
 		<!-- Table -->
 		<table>
@@ -114,8 +113,11 @@
 				</tr>
 			</tbody>
 		</table>
-		<h6>HUGE thanks to Adrian Borup (KongBorup) he made this website possible, i couldnt have done this without him!</h6>
-		<h6>HUGE thanks to Halee Angel (HeelClack) for creating an amazing background for this website!</h6>
-		<h6>thanks to everyone else who supported this project!</h6>
+	<form action="upload.php" method="post" enctype="multipart/form-data"> 
+ <input type="file" name="website">
+ <br>
+ <input type="submit" value="Upload">
+</form>
+
 	</body>
 </html>
